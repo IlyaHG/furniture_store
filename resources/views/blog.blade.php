@@ -13,7 +13,7 @@
                         <div class="breadcrumb__content">
                             <h1 class="breadcrumb__content--title text-white mb-10">Blog Grid</h1>
                             <ul class="breadcrumb__content--menu d-flex">
-                                <li class="breadcrumb__content--menu__items"><a class="text-white" href="main/index.blade.php">Home</a></li>
+                                <li class="breadcrumb__content--menu__items"><a class="text-white" href="index.blade.php">Home</a></li>
                                 <li class="breadcrumb__content--menu__items"><span class="text-white">Blog Grid</span></li>
                             </ul>
                         </div>
@@ -34,7 +34,7 @@
                         <div class="col mb-30">
                             <div class="blog__items">
                                 <div class="blog__thumbnail">
-                                    <a class="blog__thumbnail--link display-block" href="blog-details.blade.php"><img class="blog__thumbnail--img display-block" src="../../public/assets/img/blog/blog5.webp" alt="blog-img"></a>
+                                    <a class="blog__thumbnail--link display-block" href="blog-details.blade.php"><img class="blog__thumbnail--img display-block" src="{{asset('img/blog/blog5.webp')}}" alt="blog-img"></a>
                                 </div>
                                 <div class="blog__content">
                                     <ul class="blog__content--meta d-flex">
@@ -62,7 +62,7 @@
                         <div class="col mb-30">
                             <div class="blog__items">
                                 <div class="blog__thumbnail">
-                                    <a class="blog__thumbnail--link display-block" href="blog-details.blade.php"><img class="blog__thumbnail--img display-block" src="../../public/assets/img/blog/blog6.webp" alt="blog-img"></a>
+                                    <a class="blog__thumbnail--link display-block" href="blog-details.blade.php"><img class="blog__thumbnail--img display-block" src="{{asset('img/blog/blog6.webp')}}" alt="blog-img"></a>
                                 </div>
                                 <div class="blog__content">
                                     <ul class="blog__content--meta d-flex">
@@ -90,7 +90,7 @@
                         <div class="col mb-30">
                             <div class="blog__items">
                                 <div class="blog__thumbnail">
-                                    <a class="blog__thumbnail--link display-block" href="blog-details.blade.php"><img class="blog__thumbnail--img display-block" src="../../public/assets/img/blog/blog7.webp" alt="blog-img"></a>
+                                    <a class="blog__thumbnail--link display-block" href="blog-details.blade.php"><img class="blog__thumbnail--img display-block" src="{{asset('img/blog/blog7.webp')}}" alt="blog-img"></a>
                                 </div>
                                 <div class="blog__content">
                                     <ul class="blog__content--meta d-flex">
@@ -118,7 +118,7 @@
                         <div class="col mb-30">
                             <div class="blog__items">
                                 <div class="blog__thumbnail">
-                                    <a class="blog__thumbnail--link display-block" href="blog-details.blade.php"><img class="blog__thumbnail--img display-block" src="../../public/assets/img/blog/blog8.webp" alt="blog-img"></a>
+                                    <a class="blog__thumbnail--link display-block" href="blog-details.blade.php"><img class="blog__thumbnail--img display-block" src="{{asset('img/blog/blog8.webp')}}" alt="blog-img"></a>
                                 </div>
                                 <div class="blog__content">
                                     <ul class="blog__content--meta d-flex">
@@ -146,7 +146,7 @@
                         <div class="col mb-30">
                             <div class="blog__items">
                                 <div class="blog__thumbnail">
-                                    <a class="blog__thumbnail--link display-block" href="blog-details.blade.php"><img class="blog__thumbnail--img display-block" src="../../public/assets/img/blog/blog9.webp" alt="blog-img"></a>
+                                    <a class="blog__thumbnail--link display-block" href="blog-details.blade.php"><img class="blog__thumbnail--img display-block" src="{{asset('img/blog/blog9.webp')}}" alt="blog-img"></a>
                                 </div>
                                 <div class="blog__content">
                                     <ul class="blog__content--meta d-flex">
@@ -174,7 +174,7 @@
                         <div class="col mb-30">
                             <div class="blog__items">
                                 <div class="blog__thumbnail">
-                                    <a class="blog__thumbnail--link display-block" href="blog-details.blade.php"><img class="blog__thumbnail--img display-block" src="../../public/assets/img/blog/blog10.webp" alt="blog-img"></a>
+                                    <a class="blog__thumbnail--link display-block" href="blog-details.blade.php"><img class="blog__thumbnail--img display-block" src="{{asset('img/blog/blog10.webp')}}" alt="blog-img"></a>
                                 </div>
                                 <div class="blog__content">
                                     <ul class="blog__content--meta d-flex">
@@ -225,7 +225,7 @@
         <section class="newsletter__banner--section section--padding pt-0">
             <div class="container">
                 <div class="newsletter__banner--thumbnail position__relative">
-                    <img class="newsletter__banner--thumbnail__img" src="../../public/assets/img/banner/banner-bg7.webp" alt="newsletter-banner">
+                    <img class="newsletter__banner--thumbnail__img" src="{{asset('img/banner/banner-bg7.webp')}}" alt="newsletter-banner">
                     <div class="newsletter__content newsletter__subscribe">
                         <h5 class="newsletter__content--subtitle text-white">Want to offer regularly ?</h5>
                         <h2 class="newsletter__content--title text-white h3 mb-25">Subscribe Our Newsletter <br>

@@ -10,7 +10,7 @@
                     <ul class="d-flex align-items-center">
                         <li class="language__currency--list">
                             <a class="account__currency--link text-white" href="#">
-                                <img src="assets/img/icon/usd-icon.webp" alt="currency">
+                                <img src="{{asset('img/icon/usd-icon.webp')}}" alt="currency">
                                 <span>Currency</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05" viewBox="0 0 9.797 6.05">
                                     <path  d="M14.646,8.59,10.9,12.329,7.151,8.59,6,9.741l4.9,4.9,4.9-4.9Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7"/>
@@ -27,7 +27,7 @@
                         </li>
                         <li class="language__currency--list">
                             <a class="language__switcher text-white" href="#">
-                                <img class="language__switcher--icon__img" src="assets/img/icon/language-icon.webp" alt="currency">
+                                <img class="language__switcher--icon__img" src="{{asset('img/icon/language-icon.web')}}p" alt="currency">
                                 <span>Language</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05" viewBox="0 0 9.797 6.05">
                                     <path  d="M14.646,8.59,10.9,12.329,7.151,8.59,6,9.741l4.9,4.9,4.9-4.9Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7"/>
@@ -56,7 +56,7 @@
                     </a>
                 </div>
                 <div class="main__logo">
-                    <a class="main__logo--link" href="index.html"><img class="main__logo--img" src="assets/img/logo/nav-log.webp" alt="logo-img"></a>
+                    <a class="main__logo--link" href="index.html"><img class="main__logo--img" src="{{asset('img/logo/nav-log.webp')}}" alt="logo-img"></a>
                 </div>
                 <div class="header__menu d-none d-lg-block">
                     <nav class="header__menu--navigation">
@@ -185,7 +185,7 @@
         <div class="offcanvas__inner">
             <div class="offcanvas__logo">
                 <a class="offcanvas__logo_link" href="index.html">
-                    <img src="assets/img/logo/nav-log.webp" alt="Furea Logo">
+                    <img src="{{asset('img/logo/nav-log.webp')}}" alt="Furea Logo">
                 </a>
                 <button class="offcanvas__close--btn" aria-label="offcanvas close btn">close</button>
             </div>
@@ -280,7 +280,7 @@
                     <ul class="d-flex align-items-center">
                         <li class="language__currency--list">
                             <a class="offcanvas__language--switcher" href="#">
-                                <img class="language__switcher--icon__img" src="assets/img/icon/language-icon.webp" alt="currency">
+                                <img class="language__switcher--icon__img" src="img/icon/language-icon.webp" alt="currency">
                                 <span>English</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05" viewBox="0 0 9.797 6.05">
                                     <path  d="M14.646,8.59,10.9,12.329,7.151,8.59,6,9.741l4.9,4.9,4.9-4.9Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7"/>
@@ -296,7 +296,7 @@
                         </li>
                         <li class="language__currency--list">
                             <a class="offcanvas__account--currency__menu" href="#">
-                                <img src="assets/img/icon/usd-icon.webp" alt="currency">
+                                <img src="{{asset('img/icon/usd-icon.webp')}}" alt="currency">
                                 <span>$ US Dollar</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05" viewBox="0 0 9.797 6.05">
                                     <path  d="M14.646,8.59,10.9,12.329,7.151,8.59,6,9.741l4.9,4.9,4.9-4.9Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7"/>
@@ -385,7 +385,7 @@
         <div class="minicart__product">
             <div class="minicart__product--items d-flex">
                 <div class="minicart__thumbnail">
-                    <a href="product-details.html"><img src="assets/img/product/product1.webp" alt="prduct-img"></a>
+                    <a href="product-details.html"><img src="{{asset('img/product/product1.webp')}}" alt="prduct-img"></a>
                 </div>
                 <div class="minicart__text">
                     <h4 class="minicart__subtitle"><a href="product-details.html">The is Garden Vegetable.</a></h4>
@@ -408,7 +408,7 @@
             </div>
             <div class="minicart__product--items d-flex">
                 <div class="minicart__thumbnail">
-                    <a href="product-details.html"><img src="assets/img/product/product2.webp" alt="prduct-img"></a>
+                    <a href="product-details.html"><img src="{{asset('img/product/product2.webp')}}" alt="prduct-img"></a>
                 </div>
                 <div class="minicart__text">
                     <h4 class="minicart__subtitle"><a href="product-details.html">Fresh Tomatoe is organic.</a></h4>

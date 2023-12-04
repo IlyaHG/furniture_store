@@ -11,7 +11,7 @@
                         <div class="breadcrumb__content">
                             <h1 class="breadcrumb__content--title text-white mb-10">Checkout</h1>
                             <ul class="breadcrumb__content--menu d-flex">
-                                <li class="breadcrumb__content--menu__items"><a class="text-white" href="main/index.blade.php">Home</a></li>
+                                <li class="breadcrumb__content--menu__items"><a class="text-white" href="index.blade.php">Home</a></li>
                                 <li class="breadcrumb__content--menu__items"><span class="text-white">Checkout</span></li>
                             </ul>
                         </div>
@@ -209,7 +209,7 @@
                                             <td class="cart__table--body__list">
                                                 <div class="product__image two  d-flex align-items-center">
                                                     <div class="product__thumbnail border-radius-5">
-                                                        <a class="display-block" href="product-details.html"><img class="display-block border-radius-5" src="../../public/assets/img/product/small-product1.webp" alt="cart-product"></a>
+                                                        <a class="display-block" href="product-details.html"><img class="display-block border-radius-5" src="img/product/small-product1.webp" alt="cart-product"></a>
                                                         <span class="product__thumbnail--quantity">1</span>
                                                     </div>
                                                     <div class="product__description">
@@ -226,7 +226,7 @@
                                             <td class="cart__table--body__list">
                                                 <div class="cart__product d-flex align-items-center">
                                                     <div class="product__thumbnail border-radius-5">
-                                                        <a class="display-block" href="product-details.html"><img class="display-block border-radius-5" src="../../public/assets/img/product/small-product2.webp" alt="cart-product"></a>
+                                                        <a class="display-block" href="product-details.html"><img class="display-block border-radius-5" src="{{asset('img/product/small-product2.webp')}}" alt="cart-product"></a>
                                                         <span class="product__thumbnail--quantity">1</span>
                                                     </div>
                                                     <div class="product__description">
@@ -243,7 +243,7 @@
                                             <td class="cart__table--body__list">
                                                 <div class="cart__product d-flex align-items-center">
                                                     <div class="product__thumbnail border-radius-5">
-                                                        <a class="display-block" href="product-details.html"><img class="display-block border-radius-5" src="../../public/assets/img/product/small-product4.webp" alt="cart-product"></a>
+                                                        <a class="display-block" href="product-details.html"><img class="display-block border-radius-5" src="{{asset('img/product/small-product4.webp')}}" alt="cart-product"></a>
                                                         <span class="product__thumbnail--quantity">1</span>
                                                     </div>
                                                     <div class="product__description">
@@ -308,7 +308,7 @@
         <section class="newsletter__banner--section section--padding pt-0">
             <div class="container">
                 <div class="newsletter__banner--thumbnail position__relative">
-                    <img class="newsletter__banner--thumbnail__img" src="../../public/assets/img/banner/banner-bg7.webp" alt="newsletter-banner">
+                    <img class="newsletter__banner--thumbnail__img" src="{{asset('img/banner/banner-bg7.webp')}}" alt="newsletter-banner">
                     <div class="newsletter__content newsletter__subscribe">
                         <h5 class="newsletter__content--subtitle text-white">Want to offer regularly ?</h5>
                         <h2 class="newsletter__content--title text-white h3 mb-25">Subscribe Our Newsletter <br>

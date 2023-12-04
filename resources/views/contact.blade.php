@@ -11,7 +11,7 @@
                         <div class="breadcrumb__content">
                             <h1 class="breadcrumb__content--title text-white mb-10">Contact Us</h1>
                             <ul class="breadcrumb__content--menu d-flex">
-                                <li class="breadcrumb__content--menu__items"><a class="text-white" href="main/index.blade.php">Home</a></li>
+                                <li class="breadcrumb__content--menu__items"><a class="text-white" href="index.blade.php">Home</a></li>
                                 <li class="breadcrumb__content--menu__items"><span class="text-white">Contact Us</span></li>
                             </ul>
                         </div>
@@ -174,7 +174,7 @@
         <section class="newsletter__banner--section section--padding pt-0">
             <div class="container">
                 <div class="newsletter__banner--thumbnail position__relative">
-                    <img class="newsletter__banner--thumbnail__img" src="../../public/assets/img/banner/banner-bg7.webp" alt="newsletter-banner">
+                    <img class="newsletter__banner--thumbnail__img" src="{{asset('img/banner/banner-bg7.webp')}}" alt="newsletter-banner">
                     <div class="newsletter__content newsletter__subscribe">
                         <h5 class="newsletter__content--subtitle text-white">Want to offer regularly ?</h5>
                         <h2 class="newsletter__content--title text-white h3 mb-25">Subscribe Our Newsletter <br>

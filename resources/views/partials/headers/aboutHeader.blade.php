@@ -10,7 +10,7 @@
                     <ul class="d-flex align-items-center">
                         <li class="language__currency--list">
                             <a class="account__currency--link text-white" href="#">
-                                <img src="assets/img/icon/usd-icon.webp" alt="currency">
+                                <img src="{{asset('img/icon/usd-icon.webp')}}" alt="currency">
                                 <span>Currency</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05" viewBox="0 0 9.797 6.05">
                                     <path  d="M14.646,8.59,10.9,12.329,7.151,8.59,6,9.741l4.9,4.9,4.9-4.9Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7"/>
@@ -27,7 +27,7 @@
                         </li>
                         <li class="language__currency--list">
                             <a class="language__switcher text-white" href="#">
-                                <img class="language__switcher--icon__img" src="assets/img/icon/language-icon.webp" alt="currency">
+                                <img class="language__switcher--icon__img" src="{{asset('img/icon/language-icon.webp')}}" alt="currency">
                                 <span>Language</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="11.797" height="9.05" viewBox="0 0 9.797 6.05">
                                     <path  d="M14.646,8.59,10.9,12.329,7.151,8.59,6,9.741l4.9,4.9,4.9-4.9Z" transform="translate(-6 -8.59)" fill="currentColor" opacity="0.7"/>
@@ -56,7 +56,7 @@
                     </a>
                 </div>
                 <div class="main__logo">
-                    <a class="main__logo--link" href="index.html"><img class="main__logo--img" src="assets/img/logo/nav-log.webp" alt="logo-img"></a>
+                    <a class="main__logo--link" href="index.html"><img class="main__logo--img" src="{{asset('img/logo/nav-log.webp')}}" alt="logo-img"></a>
                 </div>
                 <div class="header__menu d-none d-lg-block">
                     <nav class="header__menu--navigation">

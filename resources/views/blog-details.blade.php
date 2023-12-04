@@ -11,7 +11,7 @@
                         <div class="breadcrumb__content">
                             <h1 class="breadcrumb__content--title text-white mb-10">Blog Details</h1>
                             <ul class="breadcrumb__content--menu d-flex">
-                                <li class="breadcrumb__content--menu__items"><a class="text-white" href="main/index.blade.php">Home</a></li>
+                                <li class="breadcrumb__content--menu__items"><a class="text-white" href="index.blade.php">Home</a></li>
                                 <li class="breadcrumb__content--menu__items"><span class="text-white">Blog Details</span></li>
                             </ul>
                         </div>
@@ -33,7 +33,7 @@
                                     <p class="blog__post--meta">Posted by : admin / On : February 04, 2022 / In : <a class="blog__post--meta__link" href="blog-details.html">Company, Image, Travel</a></p>
                                 </div>
                                 <div class="blog__thumbnail mb-30">
-                                    <img class="blog__thumbnail--img border-radius-10" src="../../public/assets/img/blog/blog-page-big1.webp" alt="blog-img">
+                                    <img class="blog__thumbnail--img border-radius-10" src="{{asset('img/blog/blog-page-big1.webp')}}" alt="blog-img">
                                 </div>
                                 <div class="blog__details--content">
                                     <h3 class="blog__details--content__subtitle mb-25">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus non sint saepe rem eveniet sit ea esse.</h3>
@@ -101,7 +101,7 @@
                                     <div class="col mb-28">
                                         <div class="related__post--items">
                                             <div class="related__post--thumbnail border-radius-10 mb-20">
-                                                <a class="display-block" href="blog-details.html"><img class="related__post--img display-block border-radius-10" src="../../public/assets/img/blog/related-post1.webp" alt="related-post"></a>
+                                                <a class="display-block" href="blog-details.html"><img class="related__post--img display-block border-radius-10" src="{{asset('img/blog/related-post1.webp')}}" alt="related-post"></a>
                                             </div>
                                             <div class="related__post--text">
                                                 <h3 class="related__post--title mb-5"><a class="related__post--title__link" href="blog-details.html">Post With Gallery</a></h3>
@@ -112,7 +112,7 @@
                                     <div class="col mb-28">
                                         <div class="related__post--items">
                                             <div class="related__post--thumbnail border-radius-10 mb-20">
-                                                <a class="display-block" href="blog-details.html"><img class="related__post--img display-block border-radius-10" src="../../public/assets/img/blog/related-post2.webp" alt="related-post"></a>
+                                                <a class="display-block" href="blog-details.html"><img class="related__post--img display-block border-radius-10" src="{{asset('img/blog/related-post2.webp')}}" alt="related-post"></a>
                                             </div>
                                             <div class="related__post--text">
                                                 <h3 class="related__post--title mb-5"><a class="related__post--title__link" href="blog-details.html">Post With Vedio</a></h3>
@@ -129,7 +129,7 @@
                                     <div class="reviews__comment--inner">
                                         <div class="reviews__comment--list d-flex">
                                             <div class="reviews__comment--thumbnail">
-                                                <img src="../../public/assets/img/other/comment-thumb1.webp" alt="comment-thumbnail">
+                                                <img src="{{asset('img/other/comment-thumb1.webp')}}" alt="comment-thumbnail">
                                             </div>
                                             <div class="reviews__comment--content ">
                                                 <h4 class="reviews__comment--content__title2">Jakes on</h4>
@@ -140,7 +140,7 @@
                                         </div>
                                         <div class="reviews__comment--list margin__left d-flex">
                                             <div class="reviews__comment--thumbnail">
-                                                <img src="../../public/assets/img/other/comment-thumb2.webp" alt="comment-thumbnail">
+                                                <img src="{{asset('img/other/comment-thumb2.webp')}}" alt="comment-thumbnail">
                                             </div>
                                             <div class="reviews__comment--content">
                                                 <h4 class="reviews__comment--content__title2">Jakes on</h4>
@@ -151,7 +151,7 @@
                                         </div>
                                         <div class="reviews__comment--list d-flex">
                                             <div class="reviews__comment--thumbnail">
-                                                <img src="../../public/assets/img/other/comment-thumb3.webp" alt="comment-thumbnail">
+                                                <img src="{{asset('img/other/comment-thumb3.webp')}}" alt="comment-thumbnail">
                                             </div>
                                             <div class="reviews__comment--content">
                                                 <h4 class="reviews__comment--content__title2">Jakes on</h4>
@@ -210,7 +210,7 @@
                                 <ul class="widget__categories--menu">
                                     <li class="widget__categories--menu__list">
                                         <label class="widget__categories--menu__label d-flex align-items-center">
-                                            <img class="widget__categories--menu__img" src="../../public/assets/img/product/small-product1.webp" alt="categories-img">
+                                            <img class="widget__categories--menu__img" src="{{asset('img/product/small-product1.webp')}}" alt="categories-img">
                                             <span class="widget__categories--menu__text">Denim Jacket</span>
                                             <svg class="widget__categories--menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12.355" height="8.394">
                                                 <path  d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z" transform="translate(-6 -8.59)" fill="currentColor"></path>
@@ -219,25 +219,24 @@
                                         <ul class="widget__categories--sub__menu">
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product2.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product2.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Jacket, Women</span>
                                                 </a>
-                                            </li>
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product3.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product3.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Woolend Jacket</span>
                                                 </a>
                                             </li>
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product4.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product4.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Western denim</span>
                                                 </a>
                                             </li>
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product5.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product5.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Mini Dresss</span>
                                                 </a>
                                             </li>
@@ -245,7 +244,7 @@
                                     </li>
                                     <li class="widget__categories--menu__list">
                                         <label class="widget__categories--menu__label d-flex align-items-center">
-                                            <img class="widget__categories--menu__img" src="../../public/assets/img/product/small-product2.webp" alt="categories-img">
+                                            <img class="widget__categories--menu__img" src="{{asset('img/product/small-product2.webp')}}" alt="categories-img">
                                             <span class="widget__categories--menu__text">Oversize Cotton</span>
                                             <svg class="widget__categories--menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12.355" height="8.394" >
                                                 <path  d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z" transform="translate(-6 -8.59)" fill="currentColor"></path>
@@ -254,25 +253,25 @@
                                         <ul class="widget__categories--sub__menu">
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product2.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product2.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Jacket, Women</span>
                                                 </a>
                                             </li>
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product3.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product3.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Woolend Jacket</span>
                                                 </a>
                                             </li>
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product4.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product4.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Western denim</span>
                                                 </a>
                                             </li>
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product5.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product5.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Mini Dresss</span>
                                                 </a>
                                             </li>
@@ -280,7 +279,7 @@
                                     </li>
                                     <li class="widget__categories--menu__list">
                                         <label class="widget__categories--menu__label d-flex align-items-center">
-                                            <img class="widget__categories--menu__img" src="../../public/assets/img/product/small-product3.webp" alt="categories-img">
+                                            <img class="widget__categories--menu__img" src="{{asset('img/product/small-product3.webp')}}" alt="categories-img">
                                             <span class="widget__categories--menu__text">Dairy & chesse</span>
                                             <svg class="widget__categories--menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12.355" height="8.394">
                                                 <path  d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z" transform="translate(-6 -8.59)" fill="currentColor"></path>
@@ -289,25 +288,25 @@
                                         <ul class="widget__categories--sub__menu">
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product2.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product2.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Jacket, Women</span>
                                                 </a>
                                             </li>
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product3.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product3.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Woolend Jacket</span>
                                                 </a>
                                             </li>
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product4.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product4.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Western denim</span>
                                                 </a>
                                             </li>
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product5.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product5.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Mini Dresss</span>
                                                 </a>
                                             </li>
@@ -315,7 +314,7 @@
                                     </li>
                                     <li class="widget__categories--menu__list">
                                         <label class="widget__categories--menu__label d-flex align-items-center">
-                                            <img class="widget__categories--menu__img" src="../../public/assets/img/product/small-product4.webp" alt="categories-img">
+                                            <img class="widget__categories--menu__img" src="{{asset('img/product/small-product4.webp')}}" alt="categories-img">
                                             <span class="widget__categories--menu__text">Shoulder Bag</span>
                                             <svg class="widget__categories--menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12.355" height="8.394">
                                                 <path  d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z" transform="translate(-6 -8.59)" fill="currentColor"></path>
@@ -324,25 +323,25 @@
                                         <ul class="widget__categories--sub__menu">
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product2.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product2.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Jacket, Women</span>
                                                 </a>
                                             </li>
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product3.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product3.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Woolend Jacket</span>
                                                 </a>
                                             </li>
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product4.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product4.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Western denim</span>
                                                 </a>
                                             </li>
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product5.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product5.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Mini Dresss</span>
                                                 </a>
                                             </li>
@@ -350,7 +349,7 @@
                                     </li>
                                     <li class="widget__categories--menu__list">
                                         <label class="widget__categories--menu__label d-flex align-items-center">
-                                            <img class="widget__categories--menu__img" src="../../public/assets/img/product/small-product5.webp" alt="categories-img">
+                                            <img class="widget__categories--menu__img" src="{{asset('img/product/small-product5.webp')}}" alt="categories-img">
                                             <span class="widget__categories--menu__text">Denim Jacket</span>
                                             <svg class="widget__categories--menu__arrowdown--icon" xmlns="http://www.w3.org/2000/svg" width="12.355" height="8.394">
                                                 <path  d="M15.138,8.59l-3.961,3.952L7.217,8.59,6,9.807l5.178,5.178,5.178-5.178Z" transform="translate(-6 -8.59)" fill="currentColor"></path>
@@ -359,25 +358,25 @@
                                         <ul class="widget__categories--sub__menu">
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product2.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product2.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Jacket, Women</span>
                                                 </a>
                                             </li>
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product3.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product3.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Woolend Jacket</span>
                                                 </a>
                                             </li>
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product4.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product4.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Western denim</span>
                                                 </a>
                                             </li>
                                             <li class="widget__categories--sub__menu--list">
                                                 <a class="widget__categories--sub__menu--link d-flex align-items-center" href="blog-details.html">
-                                                    <img class="widget__categories--sub__menu--img" src="../../public/assets/img/product/small-product5.webp" alt="categories-img">
+                                                    <img class="widget__categories--sub__menu--img" src="{{asset('img/product/small-product5.webp')}}" alt="categories-img">
                                                     <span class="widget__categories--sub__menu--text">Mini Dresss</span>
                                                 </a>
                                             </li>
@@ -391,7 +390,7 @@
                                     <div class="articl__post--items d-flex align-items-center">
                                         <div class="articl__post--items__thumbnail position__relative">
                                             <a class="articl__post--items__link display-block" href="blog-details.html">
-                                                <img class="articl__post--items__img display-block" src="../../public/assets/img/product/small-product1.webp" alt="product-img">
+                                                <img class="articl__post--items__img display-block" src="{{asset('img/product/small-product1.webp')}}" alt="product-img">
                                             </a>
                                         </div>
                                         <div class="articl__post--items__content">
@@ -402,7 +401,7 @@
                                     <div class="articl__post--items d-flex align-items-center">
                                         <div class="articl__post--items__thumbnail position__relative">
                                             <a class="articl__post--items__link display-block" href="blog-details.html">
-                                                <img class="articl__post--items__img display-block" src="../../public/assets/img/product/small-product2.webp" alt="product-img">
+                                                <img class="articl__post--items__img display-block" src="{{asset('img/product/small-product2.webp')}}" alt="product-img">
                                             </a>
                                         </div>
                                         <div class="articl__post--items__content">
@@ -413,7 +412,7 @@
                                     <div class="articl__post--items d-flex align-items-center">
                                         <div class="articl__post--items__thumbnail position__relative">
                                             <a class="articl__post--items__link display-block" href="blog-details.html">
-                                                <img class="articl__post--items__img display-block" src="../../public/assets/img/product/small-product3.webp" alt="product-img">
+                                                <img class="articl__post--items__img display-block" src="{{asset('img/product/small-product3.webp')}}" alt="product-img">
                                             </a>
                                         </div>
                                         <div class="articl__post--items__content">

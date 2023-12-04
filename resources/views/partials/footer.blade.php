@@ -11,7 +11,7 @@
                             </svg>
                         </h2>
                         <div class="footer__widget--inner">
-                            <a class="footer__logo" href="index.html"><img src="assets/img/logo/nav-log.webp" alt="footer-logo"></a>
+                            <a class="footer__logo" href="index.html"><img src="{{ asset('/img/logo/nav-log.webp') }}" alt="footer-logo"></a>
                             <p class="footer__widget--desc">Ut enim ad minim veniam, quis <br> nostrud exercitation ullamco laboris <br> nisi ut aliquip ex ea commodo.</p>
                             <div class="footer__social">
                                 <ul class="social__shear d-flex">
@@ -112,7 +112,7 @@
         <div class="footer__bottom d-flex justify-content-between align-items-center">
             <p class="copyright__content">Copyright © 2022 <a class="copyright__content--link" href="index.html">Furea</a> . All Rights Reserved.Design By Furea</p>
             <div class="footer__payment text-right">
-                <img class="footer__payment--visa__card display-block" src="assets/img/other/payment-visa-card.webp" alt="visa-card">
+                <img class="footer__payment--visa__card display-block" src="{{ asset('/img/other/payment-visa-card.webp') }}" alt="visa-card">
             </div>
         </div>
     </div>

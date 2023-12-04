@@ -7814,7 +7814,8 @@ input.quickview__value--number {
 }
 
 .breadcrumb__bg {
-  background: url(../img/banner/breadcrumb-bg.webp);
+    background: url('/public/img/banner/breadcrumb-bg.webp');
+
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;

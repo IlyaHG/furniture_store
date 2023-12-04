@@ -11,7 +11,7 @@
                         <div class="breadcrumb__content">
                             <h1 class="breadcrumb__content--title text-white mb-10">Compare</h1>
                             <ul class="breadcrumb__content--menu d-flex">
-                                <li class="breadcrumb__content--menu__items"><a class="text-white" href="main/index.blade.php">Home</a></li>
+                                <li class="breadcrumb__content--menu__items"><a class="text-white" href="index.blade.php">Home</a></li>
                                 <li class="breadcrumb__content--menu__items"><span class="text-white">Compare</span></li>
                             </ul>
                         </div>
@@ -38,35 +38,35 @@
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24.105" height="24.732" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"></path></svg>
                                             </button>
                                             <h4 class="compare__product--title">Cotton Dress</h4>
-                                            <img class="compare__product--thumbnail" src="../../public/assets/img/product/product1.webp" alt="compare-image">
+                                            <img class="compare__product--thumbnail" src="{{asset('img/product/product1.webp')}}" alt="compare-image">
                                         </td>
                                         <td class="compare__table--items__child">
                                             <button type="button" aria-label="compare remove btn" class="compare__remove">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24.105" height="24.732" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"></path></svg>
                                             </button>
                                             <h4 class="compare__product--title">Edna Dress</h4>
-                                            <img class="compare__product--thumbnail" src="../../public/assets/img/product/product2.webp" alt="compare-image">
+                                            <img class="compare__product--thumbnail" src="{{asset('img/product/product2.webp')}}" alt="compare-image">
                                         </td>
                                         <td class="compare__table--items__child">
                                             <button type="button" aria-label="compare remove btn" class="compare__remove">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24.105" height="24.732" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"></path></svg>
                                             </button>
                                             <h4 class="compare__product--title">Edna Dress</h4>
-                                            <img class="compare__product--thumbnail" src="../../public/assets/img/product/product3.webp" alt="compare-image">
+                                            <img class="compare__product--thumbnail" src="{{asset('img/product/product3.webp')}}" alt="compare-image">
                                         </td>
                                         <td class="compare__table--items__child">
                                             <button type="button" aria-label="compare remove btn" class="compare__remove">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24.105" height="24.732" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"></path></svg>
                                             </button>
                                             <h4 class="compare__product--title">Edna Dress</h4>
-                                            <img class="compare__product--thumbnail" src="../../public/assets/img/product/product4.webp" alt="compare-image">
+                                            <img class="compare__product--thumbnail" src="{{asset('img/product/product4.webp')}}" alt="compare-image">
                                         </td>
                                         <td class="compare__table--items__child">
                                             <button type="button" aria-label="compare remove btn" class="compare__remove">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24.105" height="24.732" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"></path></svg>
                                             </button>
                                             <h4 class="compare__product--title">Edna Dress</h4>
-                                            <img class="compare__product--thumbnail" src="../../public/assets/img/product/product5.webp" alt="compare-image">
+                                            <img class="compare__product--thumbnail" src="{{asset('img/product/product5.webp')}}" alt="compare-image">
                                         </td>
                                     </tr>
                                 </thead>
@@ -166,7 +166,7 @@
         <section class="newsletter__banner--section section--padding pt-0">
             <div class="container">
                 <div class="newsletter__banner--thumbnail position__relative">
-                    <img class="newsletter__banner--thumbnail__img" src="../../public/assets/img/banner/banner-bg7.webp" alt="newsletter-banner">
+                    <img class="newsletter__banner--thumbnail__img" src="{{asset('')}}img/banner/banner-bg7.webp" alt="newsletter-banner">
                     <div class="newsletter__content newsletter__subscribe">
                         <h5 class="newsletter__content--subtitle text-white">Want to offer regularly ?</h5>
                         <h2 class="newsletter__content--title text-white h3 mb-25">Subscribe Our Newsletter <br>

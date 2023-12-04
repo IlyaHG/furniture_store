@@ -9,7 +9,7 @@
                 <div class="row row-cols-1">
                     <div class="col">
                         <div class="error__content text-center">
-                            <img class="error__content--img mb-50" src="assets/img/other/404-thumb.webp"
+                            <img class="error__content--img mb-50" src="{{asset('/img/other/404-thumb.webp')}}"
                                  alt="error-img">
                             <h2 class="error__content--title">Opps ! We're not found this page </h2>
                             <p class="error__content--desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -26,7 +26,7 @@
         <section class="newsletter__banner--section section--padding">
             <div class="container">
                 <div class="newsletter__banner--thumbnail position__relative">
-                    <img class="newsletter__banner--thumbnail__img" src="public/assets/img/banner/banner-bg7.webp"
+                    <img class="newsletter__banner--thumbnail__img" src="{{asset('/img/banner/banner-bg7.webp')}}"
                          alt="newsletter-banner">
                     <div class="newsletter__content newsletter__subscribe">
                         <h5 class="newsletter__content--subtitle text-white">Want to offer regularly ?</h5>

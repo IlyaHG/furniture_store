@@ -28,10 +28,10 @@
                     <div class="col-lg-6">
                         <div class="about__thumbnail d-flex">
                             <div class="about__thumbnail--items">
-                                <img class="about__thumbnail--img border-radius-5 display-block" src="/img/other/about-thumb-list1.webp" alt="about-thumbnail">
+                                <img class="about__thumbnail--img border-radius-5 display-block" src="{{asset('/img/other/about-thumb-list1.webp')}}" alt="about-thumbnail">
                             </div>
                             <div class="about__thumbnail--items position__relative">
-                                <img class="about__thumbnail--img border-radius-5 display-block" src="/img/other/about-thumb-list2.webp" alt="about-thumbnail">
+                                <img class="about__thumbnail--img border-radius-5 display-block" src="{{asset('img/other/about-thumb-list2.webp')}}" alt="about-thumbnail">
                                 <div class="banner__bideo--play about__thumbnail--play">
                                     <a class="bideo__play--icon glightbox" href="https://vimeo.com/115041822" data-gallery="video">
                                         <svg id="play" xmlns="http://www.w3.org/2000/svg" width="46.302" height="46.302" viewBox="0 0 46.302 46.302">
@@ -69,7 +69,7 @@
                             <div class="about__author position__relative">
                                 <h4 class="about__author--name">Bruce Sutton</h4>
                                 <span class="about__author--rank">Spa Manager</span>
-                                <img class="about__author--signature" src="public/assets/img/icon/signature.webp" alt="signature">
+                                <img class="about__author--signature" src="{{asset('img/icon/signature.webp')}}" alt="signature">
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@
                         <div class="col-lg-3 col-md-4 col-sm-6 col-6 custom-col">
                             <div class="team__items text-center">
                                 <div class="team__thumbnail">
-                                    <img class="team__thumbnail--img border-radius-50 display-block" src="assets/img/other/team1.webp" alt="team-thumb">
+                                    <img class="team__thumbnail--img border-radius-50 display-block" src="{{asset('img/other/team1.webp')}}" alt="team-thumb">
                                 </div>
                                 <div class="team__content ">
                                     <h3 class="team__content--title">Sarrison Samuel</h3>
@@ -167,7 +167,7 @@
                         <div class="col-lg-3 col-md-4 col-sm-6 col-6 custom-col">
                             <div class="team__items text-center">
                                 <div class="team__thumbnail">
-                                    <img class="team__thumbnail--img border-radius-50 display-block" src="assets/img/other/team2.webp" alt="team-thumb">
+                                    <img class="team__thumbnail--img border-radius-50 display-block" src="{{asset('img/other/team2.webp')}}" alt="team-thumb">
                                 </div>
                                 <div class="team__content">
                                     <h3 class="team__content--title">Warrison Samuel</h3>
@@ -212,7 +212,7 @@
                         <div class="col-lg-3 col-md-4 col-sm-6 col-6 custom-col">
                             <div class="team__items text-center">
                                 <div class="team__thumbnail">
-                                    <img class="team__thumbnail--img border-radius-50 display-block" src="assets/img/other/team3.webp" alt="team-thumb">
+                                    <img class="team__thumbnail--img border-radius-50 display-block" src="{{asset('img/other/team3.webp')}}" alt="team-thumb">
                                 </div>
                                 <div class="team__content">
                                     <h3 class="team__content--title">Harrison Samuel</h3>
@@ -257,7 +257,7 @@
                         <div class="col-lg-3 col-md-4 col-sm-6 col-6 custom-col">
                             <div class="team__items text-center">
                                 <div class="team__thumbnail">
-                                    <img class="team__thumbnail--img border-radius-50 display-block" src="assets/img/other/team1.webp" alt="team-thumb">
+                                    <img class="team__thumbnail--img border-radius-50 display-block" src="{{asset('img/other/team1.webp')}}" alt="team-thumb">
                                 </div>
                                 <div class="team__content">
                                     <h3 class="team__content--title">Milton Marsh</h3>
@@ -319,7 +319,7 @@
                                     <div class="swiper-slide">
                                         <div class="testimonial__items--style2 position__relative border-radius-5 d-flex align-items-center">
                                             <div class="testimonial__thumbnail--style2">
-                                                <img class="testimonial__items--thumbnail__img display-block" src="assets/img/other/testimonial-thumb1.webp" alt="testimonial-img">
+                                                <img class="testimonial__items--thumbnail__img display-block" src="{{asset('img/other/testimonial-thumb1.webp')}}" alt="testimonial-img">
                                             </div>
                                             <div class="testimonial__content--style2">
                                                 <h3 class="testimonial__items--author__title h4">Abdur Razzak</h3>
@@ -384,7 +384,7 @@
                                     <div class="swiper-slide">
                                         <div class="testimonial__items--style2 position__relative border-radius-5 d-flex align-items-center">
                                             <div class="testimonial__thumbnail--style2">
-                                                <img class="testimonial__items--thumbnail__img display-block" src="assets/img/other/testimonial-thumb2.webp" alt="testimonial-img">
+                                                <img class="testimonial__items--thumbnail__img display-block" src="{{asset('img/other/testimonial-thumb2.webp')}}" alt="testimonial-img">
                                             </div>
                                             <div class="testimonial__content--style2">
                                                 <h3 class="testimonial__items--author__title h4">Hamid Khalid</h3>
@@ -449,7 +449,7 @@
                                     <div class="swiper-slide">
                                         <div class="testimonial__items--style2 position__relative border-radius-5 d-flex align-items-center">
                                             <div class="testimonial__thumbnail--style2">
-                                                <img class="testimonial__items--thumbnail__img display-block" src="assets/img/other/testimonial-thumb3.webp" alt="testimonial-img">
+                                                <img class="testimonial__items--thumbnail__img display-block" src="{{asset('img/other/testimonial-thumb3.webp')}}" alt="testimonial-img">
                                             </div>
                                             <div class="testimonial__content--style2">
                                                 <h3 class="testimonial__items--author__title h4">Sohidul Alam</h3>
@@ -514,7 +514,7 @@
                                     <div class="swiper-slide">
                                         <div class="testimonial__items--style2 position__relative border-radius-5 d-flex align-items-center">
                                             <div class="testimonial__thumbnail--style2">
-                                                <img class="testimonial__items--thumbnail__img display-block" src="assets/img/other/testimonial-thumb1.webp" alt="testimonial-img">
+                                                <img class="testimonial__items--thumbnail__img display-block" src="{{asset('img/other/testimonial-thumb1.webp')}}" alt="testimonial-img">
                                             </div>
                                             <div class="testimonial__content--style2">
                                                 <h3 class="testimonial__items--author__title h4">Abdur Razzak</h3>
@@ -583,8 +583,8 @@
                     </div>
                 </div>
             </div>
-            <img class="testimonial__bg--shape1" src="assets/img/other/testimonial-shape.webp" alt="">
-            <img class="testimonial__bg--shape2" src="assets/img/other/testimonial-shape2.webp" alt="">
+            <img class="testimonial__bg--shape1" src="{{asset('img/other/testimonial-shape1.webp')}}" alt="">
+            <img class="testimonial__bg--shape2" src="{{asset('img/other/testimonial-shape2.webp')}}" alt="">
         </section>
         <!-- End testimonial section -->
 
@@ -592,7 +592,7 @@
         <section class="newsletter__banner--section section--padding">
             <div class="container">
                 <div class="newsletter__banner--thumbnail position__relative">
-                    <img class="newsletter__banner--thumbnail__img" src="assets/img/banner/banner-bg7.webp" alt="newsletter-banner">
+                    <img class="newsletter__banner--thumbnail__img" src="{{asset('img/banner/banner-bg7.webp')}}" alt="newsletter-banner">
                     <div class="newsletter__content newsletter__subscribe">
                         <h5 class="newsletter__content--subtitle text-white">Want to offer regularly ?</h5>
                         <h2 class="newsletter__content--title text-white h3 mb-25">Subscribe Our Newsletter <br>
@@ -620,19 +620,19 @@
                     <div class="col">
                         <div class="brand__logo--section__inner d-flex justify-content-center align-items-center">
                             <div class="brand__logo--items">
-                                <img class="brand__logo--items__thumbnail--img" src="assets/img/logo/brand-logo1.webp" alt="brand logo">
+                                <img class="brand__logo--items__thumbnail--img" src="{{asset('img/logo/brand-logo1.webp')}}" alt="brand logo">
                             </div>
                             <div class="brand__logo--items">
-                                <img class="brand__logo--items__thumbnail--img" src="assets/img/logo/brand-logo2.webp" alt="brand logo">
+                                <img class="brand__logo--items__thumbnail--img" src="{{asset('img/logo/brand-logo2.webp')}}" alt="brand logo">
                             </div>
                             <div class="brand__logo--items">
-                                <img class="brand__logo--items__thumbnail--img" src="assets/img/logo/brand-logo3.webp" alt="brand logo">
+                                <img class="brand__logo--items__thumbnail--img" src="{{asset('img/logo/brand-logo3.webp')}}" alt="brand logo">
                             </div>
                             <div class="brand__logo--items">
-                                <img class="brand__logo--items__thumbnail--img" src="assets/img/logo/brand-logo4.webp" alt="brand logo">
+                                <img class="brand__logo--items__thumbnail--img" src="{{asset('img/logo/brand-logo4.webp')}}" alt="brand logo">
                             </div>
                             <div class="brand__logo--items">
-                                <img class="brand__logo--items__thumbnail--img" src="assets/img/logo/brand-logo5.webp" alt="brand logo">
+                                <img class="brand__logo--items__thumbnail--img" src="a{{asset('img/logo/brand-logo5.webp')}}" alt="brand logo">
                             </div>
                         </div>
                     </div>

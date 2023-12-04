@@ -11,7 +11,7 @@
                         <div class="breadcrumb__content">
                             <h1 class="breadcrumb__content--title text-white mb-10">Shopping Cart</h1>
                             <ul class="breadcrumb__content--menu d-flex">
-                                <li class="breadcrumb__content--menu__items"><a class="text-white" href="main/index.blade.php">Home</a></li>
+                                <li class="breadcrumb__content--menu__items"><a class="text-white" href="index.blade.php">Home</a></li>
                                 <li class="breadcrumb__content--menu__items"><span class="text-white">Shopping Cart</span></li>
                             </ul>
                         </div>
@@ -45,7 +45,7 @@
                                                     <div class="cart__product d-flex align-items-center">
                                                         <button class="cart__remove--btn" aria-label="search button" type="button"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="16px" height="16px"><path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"/></svg></button>
                                                         <div class="cart__thumbnail">
-                                                            <a href="product-details.html"><img class="border-radius-5" src="../../public/assets/img/product/product1.webp" alt="cart-product"></a>
+                                                            <a href="product-details.html"><img class="border-radius-5" src="{{asset('img/product/product1.webp')}}" alt="cart-product"></a>
                                                         </div>
                                                         <div class="cart__content">
                                                             <h4 class="cart__content--title"><a href="product-details.html">Fresh-whole-fish</a></h4>
@@ -75,7 +75,7 @@
                                                     <div class="cart__product d-flex align-items-center">
                                                         <button class="cart__remove--btn" aria-label="search button" type="button"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="16px" height="16px"><path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"/></svg></button>
                                                         <div class="cart__thumbnail">
-                                                            <a href="product-details.html"><img class="border-radius-5" src="../../public/assets/img/product/product2.webp" alt="cart-product"></a>
+                                                            <a href="product-details.html"><img class="border-radius-5" src="{{asset('img/product/product2.webp')}}" alt="cart-product"></a>
                                                         </div>
                                                         <div class="cart__content">
                                                             <h4 class="cart__content--title"><a href="product-details.html">Vegetable-healthy</a></h4>
@@ -105,7 +105,7 @@
                                                     <div class="cart__product d-flex align-items-center">
                                                         <button class="cart__remove--btn" aria-label="search button" type="button"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="16px" height="16px"><path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"/></svg></button>
                                                         <div class="cart__thumbnail">
-                                                            <a href="product-details.html"><img class="border-radius-5" src="../../public/assets/img/product/product3.webp" alt="cart-product"></a>
+                                                            <a href="product-details.html"><img class="border-radius-5" src="{{asset('img/product/product3.webp')}}" alt="cart-product"></a>
                                                         </div>
                                                         <div class="cart__content">
                                                             <h4 class="cart__content--title"><a href="product-details.html">Raw-onions-surface</a></h4>
@@ -135,7 +135,7 @@
                                                     <div class="cart__product d-flex align-items-center">
                                                         <button class="cart__remove--btn" aria-label="search button" type="button"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="16px" height="16px"><path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"/></svg></button>
                                                         <div class="cart__thumbnail">
-                                                            <a href="product-details.html"><img class="border-radius-5" src="../../public/assets/img/product/product4.webp" alt="cart-product"></a>
+                                                            <a href="product-details.html"><img class="border-radius-5" src="{{asset('img/product/product4.webp')}}" alt="cart-product"></a>
                                                         </div>
                                                         <div class="cart__content">
                                                             <h4 class="cart__content--title"><a href="product-details.html">Oversize Cotton Dress</a></h4>
@@ -227,8 +227,8 @@
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
                                     <a class="product__items--link" href="product-details.html">
-                                        <img class="product__items--img product__primary--img" src="../../public/assets/img/product/product1.webp" alt="product-img">
-                                        <img class="product__items--img product__secondary--img" src="../../public/assets/img/product/product2.webp" alt="product-img">
+                                        <img class="product__items--img product__primary--img" src="{{asset('img/product/product1.webp')}}" alt="product-img">
+                                        <img class="product__items--img product__secondary--img" src="{{asset('img/product/product2.webp')}}" alt="product-img">
                                     </a>
                                     <div class="product__badge">
                                         <span class="product__badge--items sale">New</span>
@@ -287,8 +287,8 @@
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
                                     <a class="product__items--link" href="product-details.html">
-                                        <img class="product__items--img product__primary--img" src="../../public/assets/img/product/product3.webp" alt="product-img">
-                                        <img class="product__items--img product__secondary--img" src="../../public/assets/img/product/product4.webp" alt="product-img">
+                                        <img class="product__items--img product__primary--img" src="{{asset('img/product/product3.webp')}}" alt="product-img">
+                                        <img class="product__items--img product__secondary--img" src="{{asset('img/product/product4.webp')}}" alt="product-img">
                                     </a>
                                     <ul class="product__items--action d-flex justify-content-center">
                                         <li class="product__items--action__list">
@@ -344,8 +344,8 @@
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
                                     <a class="product__items--link" href="product-details.html">
-                                        <img class="product__items--img product__primary--img" src="../../public/assets/img/product/product5.webp" alt="product-img">
-                                        <img class="product__items--img product__secondary--img" src="../../public/assets/img/product/product6.webp" alt="product-img">
+                                        <img class="product__items--img product__primary--img" src="{{asset('img/product/product5.webp')}}" alt="product-img">
+                                        <img class="product__items--img product__secondary--img" src="{{asset('img/product/product6.webp')}}" alt="product-img">
                                     </a>
                                     <div class="product__badge">
                                         <span class="product__badge--items sale">New</span>
@@ -404,8 +404,8 @@
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
                                     <a class="product__items--link" href="product-details.html">
-                                        <img class="product__items--img product__primary--img" src="../../public/assets/img/product/product7.webp" alt="product-img">
-                                        <img class="product__items--img product__secondary--img" src="../../public/assets/img/product/product8.webp" alt="product-img">
+                                        <img class="product__items--img product__primary--img" src="{{asset('img/product/product7.webp')}}" alt="product-img">
+                                        <img class="product__items--img product__secondary--img" src="{{asset('img/product/product8.webp')}}" alt="product-img">
                                     </a>
                                     <ul class="product__items--action d-flex justify-content-center">
                                         <li class="product__items--action__list">
@@ -461,8 +461,8 @@
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
                                     <a class="product__items--link" href="product-details.html">
-                                        <img class="product__items--img product__primary--img" src="../../public/assets/img/product/product9.webp" alt="product-img">
-                                        <img class="product__items--img product__secondary--img" src="../../public/assets/img/product/product10.webp" alt="product-img">
+                                        <img class="product__items--img product__primary--img" src="{{asset('img/product/product9.webp')}}" alt="product-img">
+                                        <img class="product__items--img product__secondary--img" src="{{asset('img/product/product10.webp')}}" alt="product-img">
                                     </a>
                                     <div class="product__badge">
                                         <span class="product__badge--items sale">New</span>
@@ -520,9 +520,9 @@
                         <div class="swiper-slide">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
-                                        <img class="product__items--img product__primary--img" src="../../public/assets/img/product/product11.webp" alt="product-img">
-                                        <img class="product__items--img product__secondary--img" src="../../public/assets/img/product/product12.webp" alt="product-img">
+                                    <a class="product__items--link" href="product-details.html>
+                                        <img class="product__items--img product__primary--img" src="{{asset('img/product/product11.webp')}}" alt="product-img">
+                                        <img class="product__items--img product__secondary--img" src="{{asset('img/product/product12.webp')}}" alt="product-img">
                                     </a>
                                     <ul class="product__items--action d-flex justify-content-center">
                                         <li class="product__items--action__list">
@@ -586,7 +586,7 @@
         <section class="newsletter__banner--section section--padding pt-0">
             <div class="container-fluid">
                 <div class="newsletter__banner--thumbnail position__relative">
-                    <img class="newsletter__banner--thumbnail__img" src="../../public/assets/img/banner/banner-bg2.webp" alt="newsletter-banner">
+                    <img class="newsletter__banner--thumbnail__img" src="{{asset('img/banner/banner-bg2.webp')}}" alt="newsletter-banner">
                     <div class="newsletter__content newsletter__subscribe">
                         <h5 class="newsletter__content--subtitle text-white">Want to offer regularly ?</h5>
                         <h2 class="newsletter__content--title text-white h3 mb-25">Subscribe Our Newsletter <br>
@@ -614,19 +614,19 @@
                     <div class="col">
                         <div class="brand__logo--section__inner d-flex justify-content-center align-items-center">
                             <div class="brand__logo--items">
-                                <img class="brand__logo--items__thumbnail--img" src="../../public/assets/img/logo/brand-logo1.webp" alt="brand logo">
+                                <img class="brand__logo--items__thumbnail--img" src="{{asset('img/logo/brand-logo1.webp')}}" alt="brand logo">
                             </div>
                             <div class="brand__logo--items">
-                                <img class="brand__logo--items__thumbnail--img" src="../../public/assets/img/logo/brand-logo2.webp" alt="brand logo">
+                                <img class="brand__logo--items__thumbnail--img" src="{{asset('img/logo/brand-logo2.webp')}}" alt="brand logo">
                             </div>
                             <div class="brand__logo--items">
-                                <img class="brand__logo--items__thumbnail--img" src="../../public/assets/img/logo/brand-logo3.webp" alt="brand logo">
+                                <img class="brand__logo--items__thumbnail--img" src="{{asset('img/logo/brand-logo3.webp')}}" alt="brand logo">
                             </div>
                             <div class="brand__logo--items">
-                                <img class="brand__logo--items__thumbnail--img" src="../../public/assets/img/logo/brand-logo4.webp" alt="brand logo">
+                                <img class="brand__logo--items__thumbnail--img" src="{{asset('img/logo/brand-logo4.webp')}}" alt="brand logo">
                             </div>
                             <div class="brand__logo--items">
-                                <img class="brand__logo--items__thumbnail--img" src="../../public/assets/img/logo/brand-logo5.webp" alt="brand logo">
+                                <img class="brand__logo--items__thumbnail--img" src="{{asset('img/logo/brand-logo5.webp')}}" alt="brand logo">
                             </div>
                         </div>
                     </div>
