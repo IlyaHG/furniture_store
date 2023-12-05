@@ -25,21 +25,40 @@
         <div class="login__section section--padding">
             <div class="container">
                 <form action="{{route('login_process')}}" method="POST">
+                    @csrf
                     <div class="login__section--inner">
                         <div class="row row-cols-md-2 row-cols-1">
                             <div class="col">
                                 <div class="account__login">
                                     <div class="account__login--header mb-25">
                                         <h3 class="account__login--header__title mb-10">Login</h3>
+
+                                        @if(session()->has('success'))
+                                            <div class="alert alert-success">
+                                                {{session()->get('success')}}
+                                                {{session()->forget('success')}}
+                                            </div>
+                                        @endif
+
+                                        @error('fail')
+                                        {{$message}}
+                                        @enderror
+
+                                        @if(!$errors->has('fail'))
                                         <p class="account__login--header__desc">Login if you area a returning customer.</p>
+                                        @endif
                                     </div>
+
                                     <div class="account__login--inner">
                                         <label>
-                                            <input class="account__login--input" name="email" placeholder="Email Address" type="email">
+                                            <input class="account__login--input" name="login_email"  placeholder="Email Address" type="email">
                                         </label>
+
                                         <label>
-                                            <input class="account__login--input" name="password" placeholder="Password" type="password">
+                                            <input class="account__login--input" name="login_password" placeholder="Password" type="password">
                                         </label>
+
+
                                         <div class="account__login--remember__forgot mb-15 d-flex justify-content-between align-items-center">
                                             <div class="account__login--remember position__relative">
                                                 <input class="checkout__checkbox--input" id="check1" type="checkbox">
@@ -70,16 +89,16 @@
                                     </div>
                                     <div class="account__login--inner">
                                         <label>
-                                            <input class="account__login--input" name="username" placeholder="Username" type="text">
+                                            <input class="account__login--input" name="register_username" placeholder="Username" type="text">
                                         </label>
                                         <label>
-                                            <input class="account__login--input" name="email" placeholder="Email Addres" type="email">
+                                            <input class="account__login--input" name="register_email" placeholder="Email Address" type="email">
                                         </label>
                                         <label>
-                                            <input class="account__login--input" name="password" placeholder="Password" type="password">
+                                            <input class="account__login--input" name="register_password" placeholder="Password" type="password">
                                         </label>
                                         <label>
-                                            <input class="account__login--input" name="password_confirm" placeholder="Confirm Password" type="password">
+                                            <input class="account__login--input" name="password_confirmation" placeholder="Confirm Password" type="password">
                                         </label>
                                         <label>
                                             <button class="account__login--btn primary__btn mb-10" type="submit">Submit & Register</button>
