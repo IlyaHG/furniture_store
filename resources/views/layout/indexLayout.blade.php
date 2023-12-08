@@ -25,7 +25,7 @@
 
 <body>
 
-@include('partials.headers.indexHeader')
+@include('partials.header')
 @yield('content')
 @include('partials.footer')
 @include('partials.quickview')

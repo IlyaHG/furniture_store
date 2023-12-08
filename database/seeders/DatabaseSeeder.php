@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\User;
@@ -15,13 +16,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-////         User::factory(2)->create();
-//         Product::factory(10)->create();
-////         Category::factory(1)->create();
+        User::factory(2)->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        Brand::factory(20)->create();
+
+        Product::factory(20)
+            ->has(Category::factory(rand(1, 3)))
+            ->create();
     }
 }

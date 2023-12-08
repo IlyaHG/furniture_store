@@ -4,16 +4,28 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Category extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'category_name'
+        'title',
+        'slug'
     ];
-    public function product()
+    public function products(): belongsToMany
     {
-        return $this->belongsTo(Product::class);
+        return $this->belongsToMany(Product::class);
     }
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function (Category $category) {
+            $category->slug = $category->slug ?? str($category->title)->slug();
+        });
+    }
+
 }

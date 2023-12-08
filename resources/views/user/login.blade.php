@@ -11,7 +11,7 @@
                         <div class="breadcrumb__content">
                             <h1 class="breadcrumb__content--title text-white mb-10">Account Page</h1>
                             <ul class="breadcrumb__content--menu d-flex">
-                                <li class="breadcrumb__content--menu__items"><a class="text-white" href="index.html">Home</a></li>
+                                <li class="breadcrumb__content--menu__items"><a class="text-white" href="{{route('home')}}">Home</a></li>
                                 <li class="breadcrumb__content--menu__items"><span class="text-white">Account Page</span></li>
                             </ul>
                         </div>

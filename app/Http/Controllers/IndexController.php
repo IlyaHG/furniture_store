@@ -9,8 +9,22 @@ class IndexController extends Controller
     {
         return view('index');
     }
-    public function showMyAccountForm($id)
+
+
+
+    public function showSofasForm()
     {
-        return view('user.my-account');
+        return view('shop.products');
     }
+    public function showProductsForm()
+    {
+        return view('shop.products');
+    }
+
+    public function showAboutUsForm()
+    {
+        return view('about');
+    }
+
+
 }
