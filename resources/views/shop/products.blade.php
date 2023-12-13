@@ -5,15 +5,16 @@
 
         <!-- Start breadcrumb section -->
         <section class="breadcrumb__section breadcrumb__bg">
+
             <div class="container">
                 <div class="row row-cols-1">
                     <div class="col">
                         <div class="breadcrumb__content">
-                            <h1 class="breadcrumb__content--title text-white mb-10">Shop Grid</h1>
+                            <h1 class="breadcrumb__content--title text-white mb-10">Sofas</h1>
                             <ul class="breadcrumb__content--menu d-flex">
                                 <li class="breadcrumb__content--menu__items"><a class="text-white" href="{{route('home')}}">Home</a>
                                 </li>
-                                <li class="breadcrumb__content--menu__items"><span class="text-white">Shop Grid</span>
+                                <li class="breadcrumb__content--menu__items"><span class="text-white">Sofas</span>
                                 </li>
                             </ul>
                         </div>
@@ -143,12 +144,12 @@
                                             <div class="col mb-30">
                                                 <div class="product__items ">
                                                     <div class="product__items--thumbnail">
-                                                        <a class="product__items--link" href="product-details.html">
+                                                        <a class="product__items--link" href="product-details.blade.php">
                                                             <img class="product__items--img product__primary--img"
-                                                                 src="{{asset('img/product/product1.webp')}}"
+                                                                 src="{{asset('img/product/product2.jpg')}}"
                                                                  alt="product-img">
                                                             <img class="product__items--img product__secondary--img"
-                                                                 src="{{asset('img/product/product2.webp')}}"
+                                                                 src="{{asset('img/product/product2.jpg')}}"
                                                                  alt="product-img">
                                                         </a>
                                                         <div class="product__badge">
@@ -235,7 +236,7 @@
                                                             </ul>
                                                         </div>
                                                         <h3 class="product__items--content__title h4"><a
-                                                                href="product-details.html">Fashion <P></P>lastic Chair</a>
+                                                                href="product-details.blade.php">Fashion <P></P>lastic Chair</a>
                                                         </h3>
                                                         <div class="product__items--price">
                                                             <span class="current__price">$150.00</span>
@@ -268,7 +269,7 @@
                                                     <div class="product__list--items__left d-flex align-items-center">
                                                         <div
                                                             class="product__items--thumbnail product__list--items__thumbnail">
-                                                            <a class="product__items--link" href="product-details.html">
+                                                            <a class="product__items--link" href="product-details.blade.php">
                                                                 <img class="product__items--img product__primary--img"
                                                                      src="{{ asset('img/product/product11.webp')}}"
                                                                      alt="product-img">
@@ -284,7 +285,7 @@
                                                             <span
                                                                 class="product__items--content__subtitle mb-5">Wooden</span>
                                                             <h4 class="product__list--items__content--title mb-15"><a
-                                                                    href="product-details.html">Larger Minimal Wooden
+                                                                    href="product-details.blade.php">Larger Minimal Wooden
                                                                     Chair</a></h4>
                                                             <p class="product__list--items__content--desc m-0">Lorem,
                                                                 ipsum dolor sit amet consectetur adipisicing elit. Quia

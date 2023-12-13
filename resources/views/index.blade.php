@@ -438,8 +438,8 @@
                                     <div class="product__items">
                                         <div class="product__items--thumbnail">
                                             <a class="product__items--link" href="product-details.html">
-                                                <img class="product__items--img product__primary--img" src="{{ asset('img/product/product13.webp') }}" alt="product-img">
-                                                <img class="product__items--img product__secondary--img" src="{{ asset('img/product/product14.webp') }}" alt="product-img">
+                                                <img class="product__items--img product__primary--img" src="{{ asset('/img/product/product13.webp') }}" alt="product-img">
+                                                <img class="product__items--img product__secondary--img" src="{{ asset('/img/product/product14.webp') }}" alt="product-img">
                                             </a>
                                             <div class="product__badge">
                                                 <span class="product__badge--items sale">New</span>

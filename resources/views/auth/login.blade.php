@@ -1,5 +1,5 @@
 @extends('layout.layout')
-@section('title','Авторизация, Регистрация')
+@section('title','Вход')
 @section('content')
     <main class="main__content_wrapper">
 
@@ -41,17 +41,24 @@
                                         @endif
 
                                         @error('fail')
-                                        {{$message}}
+                                        {{ $message }}
                                         @enderror
 
                                         @if(!$errors->has('fail'))
                                         <p class="account__login--header__desc">Login if you area a returning customer.</p>
                                         @endif
+
+                                        @if(session()->has('message'))
+                                            {{$message}}
+                                        @endif
                                     </div>
 
                                     <div class="account__login--inner">
                                         <label>
-                                            <input class="account__login--input" name="login_email"  placeholder="Email Address" type="email">
+                                            <input class="account__login--input"
+                                            name="login_email"
+                                            placeholder="Email Address">
+
                                         </label>
 
                                         <label>
@@ -66,7 +73,9 @@
                                                 <label class="checkout__checkbox--label login__remember--label" for="check1">
                                                     Remember me</label>
                                             </div>
-                                            <button class="account__login--forgot" type="submit">Forgot Your Password?</button>
+{{--                                            <button class="account__login--forgot" type="submit">Forgot Your Password?</button>--}}
+                                            <a class="account__login--forgot-link" href="{{route('password.request')}}">Forgot Your Password?</a>
+
                                         </div>
                                         <button class="account__login--btn primary__btn" type="submit">Login</button>
                                         <div class="account__login--divide">
@@ -75,7 +84,7 @@
                                         <div class="account__social d-flex justify-content-center mb-15">
                                             <a class="account__social--link facebook" target="_blank" href="https://www.facebook.com">Facebook</a>
                                             <a class="account__social--link google" target="_blank" href="https://www.google.com">Google</a>
-                                            <a class="account__social--link twitter" target="_blank" href="https://twitter.com">Twitter</a>
+                                            <a class="account__social--link github" target="_blank" href="{{route('socialite.github')}}">GitHub</a>
                                         </div>
                                         <p class="account__login--signup__text">Don,t Have an Account? <button type="submit">Sign up now</button></p>
                                     </div>

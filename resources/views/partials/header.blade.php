@@ -91,10 +91,10 @@
                                             {{--                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop.html">Chairs</a></li>--}}
                                             {{--                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-right-sidebar.html">Tables</a></li>--}}
                                             <li class="header__mega--sub__menu_li"><a
-                                                    class="header__mega--sub__menu--title" href="{{route('products')}}">Sofas</a>
+                                                    class="header__mega--sub__menu--title" href="{{route('sofas')}}">Sofas</a>
                                             </li>
                                             {{--                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-grid-list.html">Beds</a></li>--}}
-                                            {{--                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-list.html">Armchairs</a></li>--}}
+                                            {{--                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="shop-list.blade.php">Armchairs</a></li>--}}
                                         </ul>
                                     </li>
                                     <li class="header__mega--menu__li">
@@ -103,10 +103,10 @@
                                             <li class="header__mega--sub__menu_li"><a
                                                     class="header__mega--sub__menu--title" href="product-details.html">Women's
                                                     outerwear</a></li>
-                                            {{--                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-variable.html">Video Product</a></li>--}}
-                                            {{--                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-variable.html">Variable Product</a></li>--}}
+                                            {{--                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-variable.blade.php">Video Product</a></li>--}}
+                                            {{--                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-variable.blade.php">Variable Product</a></li>--}}
                                             {{--                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-left-sidebar.html">Product Left Sidebar</a></li>--}}
-                                            {{--                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-gallery.html">Product Gallery</a></li>--}}
+                                            {{--                                            <li class="header__mega--sub__menu_li"><a class="header__mega--sub__menu--title" href="product-gallery.blade.php">Product Gallery</a></li>--}}
                                         </ul>
                                     </li>
                                     <li class="header__mega--menu__li">

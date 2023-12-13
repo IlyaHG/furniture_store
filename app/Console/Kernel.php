@@ -4,16 +4,17 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use Illuminate\Support\Facades\Artisan;
 
 class Kernel extends ConsoleKernel
 {
     /**
      * Define the application's command schedule.
      */
-    protected function schedule(Schedule $schedule): void
-    {
-        // $schedule->command('inspire')->hourly();
-    }
+//    protected function schedule(Schedule $schedule): void
+//    {
+//         $schedule->command('artisan:command')->hourly();
+//    }
 
     /**
      * Register the commands for the application.
@@ -23,5 +24,11 @@ class Kernel extends ConsoleKernel
         $this->load(__DIR__.'/Commands');
 
         require base_path('routes/console.php');
+    }
+    protected function define(): void
+    {
+        Artisan::command('a', function () {
+            $this->call('sail', ['artisan']);
+        })->describe('Execute "sail artisan" command with a shortcut');
     }
 }

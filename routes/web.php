@@ -5,18 +5,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\AuthController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-
 Route::middleware('auth')->group(function () {
 
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
@@ -46,6 +34,27 @@ Route::post('/login_process', [AuthController::class, 'loginOrRegister'])->name(
 
 Route::get('/about_us', [IndexController::class, 'showAboutUsForm'])->name('about_us');
 
+
+
+Route::get('/forgot-password',[AuthController::class, 'forgot'])
+    ->name('password.request');
+
+Route::post('/forgot-password', [AuthController::class, 'forgotPassword'])
+    ->name('password.email');
+
+Route::get('/reset-password/{token}', [AuthController::class ,'reset'])
+    ->name('password.reset');
+
+Route::post('/reset-password', [AuthController::class, 'resetPassword'])
+    ->name('password.update');
+
+
+// Socialite
+Route::get('/auth/socialite/redirect',[AuthController::class ,'github'])
+    ->name('socialite.github');
+
+Route::get('/auth/socialite/github/callback', [AuthController::class ,'githubCallback'])
+    ->name('socialite.callback');
 
 
 //});

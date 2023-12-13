@@ -7814,21 +7814,21 @@ input.quickview__value--number {
 }
 
 .breadcrumb__bg {
-    background: url('/public/img/banner/breadcrumb-bg.webp');
-
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-  height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
+    background: url('../../img/banner/breadcrumb-bg.webp');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
 }
+
 
 @media only screen and (min-width: 768px) {
   .breadcrumb__bg {
@@ -11797,8 +11797,9 @@ details > summary::-webkit-details-marker {
   color: var(--white-color);
 }
 
-.account__social--link.twitter {
-  background: #55ADEE;
+.account__social--link.github {
+  background: #000000;
+    color: #ffffff;
 }
 
 .account__social--link.twitter:hover {

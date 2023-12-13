@@ -14,7 +14,7 @@
                             <li class="account__menu--list"><a href="{{route('my_settings')}}">Change Profile</a></li>
                             <li class="account__menu--list active"><a href="{{route('my_addresses')}}">Addresses</a></li>
 
-                            <li class="account__menu--list"><a href="{{route('logout')}}l">Log Out</a></li>
+                            <li class="account__menu--list"><a href="{{route('logout')}}">Log Out</a></li>
                         </ul>
                     </div>
                     <div class="account__wrapper">

@@ -26,7 +26,10 @@ class User extends Authenticatable
         'country',
         'age',
         'sur_name',
-        'gender'
+        'gender',
+        'github_id',
+        'github_token',
+        'github_refresh_token',
     ];
 
     /**

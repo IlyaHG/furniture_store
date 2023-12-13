@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Carbon\CarbonInterval;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;
@@ -21,11 +22,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Model::preventLazyLoading(!app()->isProduction());
-        Model::preventSilentlyDiscardingAttributes();
+        Model::shouldBeStrict(!app()->isProduction());
 
-//        DB::whenQueryingForLongerThan(500, function (Connection $connection, QueryExecuted $event) {
-//            //
-//        });
+        if(app()->isProduction()) {
+
+        DB::whenQueryingForLongerThan(CarbonInterval::seconds(5), function (Connection $connection) {
+            logger()
+                ->channel('telegram')
+                -debug('whenQueryingForLongerThan:' . $connection->query()->toSql());
+        });
+        }
     }
 }
